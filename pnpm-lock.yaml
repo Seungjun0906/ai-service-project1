@@ -73,9 +73,6 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      '@ai-project1/biome-config':
-        specifier: workspace:*
-        version: link:../../../packages/biome-config
       '@biomejs/biome':
         specifier: 1.9.4
         version: 1.9.4
@@ -97,8 +94,6 @@ importers:
       typescript:
         specifier: ^5
         version: 5.8.2
-
-  packages/biome-config: {}
 
   packages/typescript-config: {}
 
