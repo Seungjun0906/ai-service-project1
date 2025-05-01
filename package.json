@@ -5,11 +5,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "check-types": "turbo run check-types",
+    "client-main": "pnpm --filter @service/main",
+    "client-chatbot": "pnpm --filter @service/chatbot"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "@biomejs/biome": "^1.9.4",
     "turbo": "^2.5.2",
     "typescript": "5.8.2"
   },
